@@ -1,0 +1,47 @@
+syntax="proto3";
+
+package auth.v1;
+
+option go_package = "github.com/nextadm/gen/auth/v1;authV1";
+
+service AuthService {
+  // 鉴权
+  rpc Authentication(AuthenticationRequest) returns(AuthenticationResponse);
+  // 授权
+  rpc Authorization(AuthorizationRequest) returns(AuthorizationResponse);
+}
+
+service SessionService {
+  // 创建 session
+  rpc CreateSession(CreateSessionRequest) returns(CreateSessionResponse);
+  // 验证 session
+  rpc ValidateSession(ValidateSessionRequest) returns(ValidateSessionResponse);
+  // 撤销 session
+  rpc RevokeSession(RevokeSessionRequest) returns(RevokeSessionResponse);
+  // 延长 session
+  rpc ExtendSession(ExtendSessionRequest) returns(ExtendSessionResponse);
+}
+
+message AuthenticationRequest {}
+
+message AuthenticationResponse {}
+
+message AuthorizationRequest {}
+
+message AuthorizationResponse {}
+
+message CreateSessionRequest {}
+
+message CreateSessionResponse {}
+
+message ValidateSessionRequest {}
+
+message ValidateSessionResponse {}
+
+message RevokeSessionRequest {}
+
+message RevokeSessionResponse {}
+
+message ExtendSessionRequest {}
+
+message ExtendSessionResponse {}
