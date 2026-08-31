@@ -1,0 +1,43 @@
+load(
+    "@rules_apple//apple:ios.bzl",
+    "ios_application",
+)
+load("@rules_swift//swift:swift.bzl", "swift_library")
+load(
+    "@rules_xcodeproj//xcodeproj:defs.bzl",
+    "top_level_target",
+    "xcodeproj",
+)
+
+xcodeproj(
+    name = "xcodeproj",
+    project_name = "App",
+    tags = ["manual"],
+    top_level_targets = [
+        top_level_target(
+            ":App",
+            target_environments = [
+                "simulator",
+            ],
+        ),
+    ],
+)
+
+ios_application(
+    name = "App",
+    bundle_id = "com.example.app",
+    families = [
+        "iphone",
+    ],
+    minimum_os_version = "15.0",
+    visibility = ["//visibility:public"],
+    deps = [":swift_default_library"],
+)
+
+swift_library(
+    name = "swift_default_library",
+    srcs = [
+        "App/App.swift",
+        "App/ContentView.swift",
+    ],
+)

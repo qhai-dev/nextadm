@@ -12,5 +12,11 @@ use_repo(
     "com_github_google_wire",
 )
 
+# protobuf and grpc_gatwway
 bazel_dep(name = "protobuf", version = "35.1")
 bazel_dep(name = "grpc_ecosystem_grpc_gateway", version = "2.29.0.bcr.3")
+
+# apple swift and xcode
+bazel_dep(name = "rules_apple", version = "5.0.0-rc4")
+bazel_dep(name = "rules_swift", version = "4.0.0-rc6")
+bazel_dep(name = "rules_xcodeproj", version = "4.1.0")
