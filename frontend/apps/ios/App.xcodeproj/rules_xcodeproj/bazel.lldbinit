@@ -1,7 +1,0 @@
-platform settings -w "/Users/qhai-dev/Library/Caches/bazel/_bazel_qhai-dev/b6220f7341d511b7b70ba85ea54ced8d/rules_xcodeproj.noindex/build_output_base/execroot/_main"
-settings set target.source-map ./bazel-out/ "/Users/qhai-dev/Library/Caches/bazel/_bazel_qhai-dev/b6220f7341d511b7b70ba85ea54ced8d/rules_xcodeproj.noindex/build_output_base/execroot/_main/bazel-out"
-settings append target.source-map ./external/ "/Users/qhai-dev/Library/Caches/bazel/_bazel_qhai-dev/b6220f7341d511b7b70ba85ea54ced8d/rules_xcodeproj.noindex/build_output_base/external"
-settings append target.source-map ./external/ "/Users/qhai-dev/Library/Caches/bazel/_bazel_qhai-dev/b6220f7341d511b7b70ba85ea54ced8d/rules_xcodeproj.noindex/build_output_base/execroot/_main/external"
-settings append target.source-map "./external/rules_apple+/" "/Users/qhai-dev/Library/Caches/bazel/_bazel_qhai-dev/cache/repos/v1/contents/6df61773afd67f7df10d137bcb3f546353c957c44f4f2caa6307cc1a29d8a99a/64f94762-519f-41c0-b9ec-530fc2a0c727"
-settings append target.source-map "./" "/Users/qhai-dev/qhai-dev/yato"
-command script import "/Users/qhai-dev/Library/Developer/Xcode/DerivedData/App-ctczfjuqvmtndzhakozpmmqvtatj/Build/Intermediates.noindex/Debug/swift_debug_settings.py"

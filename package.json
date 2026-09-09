@@ -1,11 +1,5 @@
 {
     "name": "yato",
     "private": true,
-    "scripts": {
-
-    },
-    "devDependencies": {
-
-    },
     "packageManager": "pnpm@11.9.0"
 }

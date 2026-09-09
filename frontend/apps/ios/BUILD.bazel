@@ -11,7 +11,7 @@ load(
 
 xcodeproj(
     name = "xcodeproj",
-    project_name = "App",
+    project_name = "app",
     tags = ["manual"],
     top_level_targets = [
         top_level_target(
@@ -37,7 +37,7 @@ ios_application(
 swift_library(
     name = "swift_default_library",
     srcs = [
-        "App/App.swift",
-        "App/ContentView.swift",
+        "app/App.swift",
+        "app/ContentView.swift",
     ],
 )
